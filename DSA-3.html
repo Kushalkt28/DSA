@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Unique values only from 2 arrays i.e. union values
+// const inputA = [1, 2, 3, 4, 5, 1];
+// const inputB = [1, 2, 3, 4, 5, 1, 7, 6, 4, 3, 8];
+
+// Output
+// [1, 2, 3, 4, 5, 6, 7, 8];
+              let inputA = [1, 2, 3, 4, 5, 1];
+      let inputB = [1, 2, 3, 4, 5, 1, 7, 6, 4, 3, 8];
+      let output = [];
+
+      for (let i = 0; i < inputA.length; i++) {
+       if(!output.includes(inputA[i])){
+        output.push(inputA[i])
+       }
+    } 
+    for (let i = 0; i < inputB.length; i++) {
+       if(!output.includes(inputB[i])){
+        output.push(inputB[i])
+       }
+    } 
+    
+console.log(output)
+    </script>
+</body>
+</html>

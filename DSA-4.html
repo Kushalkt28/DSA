@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         Question of the day
+
+// AAAABBBCCD -> 4A3B2C1D
+          let input = "AAAABBBCCD";
+    function Occurance(input) {
+      let output = 1;
+      let kush = "";
+      for (let i = 0; i < input.length; i++) {
+        //       console.log(input[i]);
+        if (input[i] == input[i + 1]) {
+          //         console.log(input[i]);
+
+          output++;
+        } else {
+          kush += output + input[i];
+          output = 1;
+        }
+      }
+
+      return kush;
+    }
+    //   Occurance(input);
+    console.log(Occurance(input));
+    </script>
+</body>
+</html>
